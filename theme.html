@@ -240,20 +240,7 @@
                 </ul>
               </div>
             </div>
-            <div class="widget widget-latestposts">
-              <h2 class="widget-title">Latest Posts</h2>
-              <div class="widget-content popular-posts">
-                {% if posts_recent %}
-                <ul>
-                {% for post in posts_recent %}
-                {% if loop.index <= 5 and loop.index > 0 %}
-                  <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
-                {% endif %}
-                {% endfor %}
-                </ul>
-                {% endif %}
-              </div>
-            </div>
+           
             <div class="widget widget-tagcloud">
               <h2 class="widget-title">Tag Cloud</h2>
               <div class="widget-content tag-cloud">
